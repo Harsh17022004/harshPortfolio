@@ -29,3 +29,10 @@ function collapseNav() {
   });
 }
 collapseNav();
+
+// const navBtns = document.querySelectorAll(".navBtns a");
+// navBtns.forEach((el) => {
+//   el.addEventListener("mouseenter", () => {
+
+//   });
+// });

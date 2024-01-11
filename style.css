@@ -30,7 +30,14 @@ body {
   z-index: 10;
 }
 .nav .logo {
-  font-size: 1.3rem;
+  height: 6vw;
+  width: 6vw;
+}
+.nav .logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: invert(1);
 }
 .nav .navBtns {
   font-size: 1rem;
@@ -42,6 +49,15 @@ body {
 }
 .nav .navBtns a {
   margin-right: 2vw;
+  height: 1.3vw;
+  overflow: hidden;
+}
+.nav .navBtns a h6 {
+  font-size: 1.2vw;
+  transition: all 0.3s ease-in-out;
+}
+.nav .navBtns a:hover h6 {
+  transform: translateY(-100%);
 }
 .collapseBtn {
   position: absolute;
@@ -83,10 +99,16 @@ body {
   flex: 0 0 50%;
 }
 .img {
-  height: 200px;
-  width: 200px;
+  height: 18vw;
+  width: 18vw;
   border-radius: 50%;
   background-color: #fff;
+  overflow: hidden;
+}
+.page1 .right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .page2 {
   display: flex;
@@ -199,6 +221,13 @@ footer .social i {
 
 /* media */
 @media (max-width: 1000px) {
+  .nav .navBtns a {
+    height: 2.3vw;
+    overflow: hidden;
+  }
+  .nav .navBtns a h6 {
+    font-size: 2vw;
+  }
   .page1 {
     flex-direction: column-reverse;
   }
@@ -237,15 +266,27 @@ footer .social i {
     padding: 2vw 10%;
   }
   .nav .logo {
-    margin-bottom: 2vw;
+    height: 10vw;
+    width: 10vw;
   }
   .nav .navBtns {
     flex-direction: column;
     align-items: start;
     transition: all 0.3s ease;
   }
+  .nav .navBtns a {
+    height: 5.3vw;
+    overflow: hidden;
+  }
+  .nav .navBtns a h6 {
+    font-size: 5vw;
+  }
   .collapseBtn {
     display: block;
+  }
+  .page1 .right .img {
+    height: 25vw;
+    width: 25vw;
   }
   .page3 .box {
     width: 100%;
